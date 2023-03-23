@@ -38,7 +38,7 @@ Inspect the page to see what is happening in the elements and the console.
 
 # Tasks
 ## 1. Select the DOM Elements
-Using JavaScript, select the elements `title` and `center`.
+Using JavaScript, select the elements with the id's of `header` and `center`.
 - use `document.getElementById`
 To observe this has worked, `console.log` these elements.
 
