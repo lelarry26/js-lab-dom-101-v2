@@ -11,7 +11,7 @@ You will be writing some functions in JavaScript that will manipulate the DOM.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/3/38/GitHub_Fork_Button.png)
 
-*A **fork** is a copy of this repository. This forked repository will appear on your github account.*
+*A **fork** is a copy of this repository. This forked repository will appear on your GitHub account.*
 
 - Find the repository on *YOUR* account (ie yourUserName/js-lab-DOM-101) and click on the green `Code` button at the top of the page.
 
@@ -47,7 +47,7 @@ To observe this has worked, `console.log` these elements.
 Add your name to the title element.
  - use the variable name for the element and `.innerHTML` to add `[your name]'s Awesome Site`.
 
-Using JS, create a `h3` and an `unordered list` to the center div.
+Using JS, create a `h3` and an unordered list `ul` to the center div.
 - Add `My Book List` as the inner text to the `h3`.
 - Add an `id` of "bookList" to the unordered list.
 - Append both of these to the `center` div.
@@ -58,10 +58,11 @@ Near the top of your JS file, make a global variable called `books` that is an a
 ```js
 //example
 const books = [
-  {title: "Lord of the Rings",
-  author: "J.R.R. Tolkien"
+  {
+    title: "Lord of the Rings",
+    author: "J.R.R. Tolkien"
   }
-  ]
+]
 ```
 
 ## 3. Using Template literals (Template Strings)
@@ -71,7 +72,7 @@ const books = [
 - Using a template literal, create a `<li>` with the title from our books array. (`console.log` it for good measure).
 - Append this to our `bookList`.
 
-Did the `.appendChild` it work??
+Did the `.appendChild()` work??
 ![error GIF](https://media.giphy.com/media/8L0Pky6C83SzkzU55a/giphy.gif)
 
 Let's look at the error.
@@ -87,4 +88,4 @@ Why is our literal not an actual Node?
  - Using the `map()` array method, loop through the array of books and populate our `bookList` with our list.
  > note: to remove the `,` between your list items, use `.join('')`
 
-NOW!  Add some books to the array and watch it add to the list!
+NOW! Add some books to the array and watch it add to the list!
