@@ -141,18 +141,17 @@ roster.id = "booklist";
 // console.log(addBooks(books));
   
 function addBooks (books){
-   let booklist = books.map(function (){
-      
-      for(let i = 0; i < books.length; i++){
+   let booklist = books.map(function (){ 
+      for(let i = 0; i <= books.length; i++){
          let newBook = document.createElement('li');
          newBook.innerText = `${books[i].title}`;
          roster.append(newBook)
       }
-      
-      })
-   };
-
+      return booklist.join('');
+   })
+};
 console.log(addBooks(books));
+
 
 
 
