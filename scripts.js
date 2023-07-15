@@ -108,23 +108,51 @@ face.innerHTML = "My Book List";
 roster.id = "booklist";
 
 //For these v //I thought I could try to make a for loop, but it got too complicated. Is there a way?
-listItem.innerText = books[0].title;
-const listItem1 = document.createElement('li');
-listItem1.innerText = books[1].title;
-const listItem2 = document.createElement('li');
-listItem2.innerText = books[2].title;
-roster.append(listItem); 
-roster.append(listItem1);
-roster.append(listItem2);  
-//For these ^
-function addToBookList(){
-   for(let j = 0; j < books.length; j++)
-   {
-      return [books[j].title].join(" "); //instructions said to add .join(" ") to remove the comma, but there is no comma if I remove the .join(" ")
-   }
-}
-books.map(addToBookList);
+// listItem.innerText = books[0].title;
+// const listItem1 = document.createElement('li');
+// listItem1.innerText = books[1].title;
+// const listItem2 = document.createElement('li');
+// listItem2.innerText = books[2].title;
+// roster.append(listItem); 
+// roster.append(listItem1);
+// roster.append(listItem2);  
+// //For these ^
+// function addToBookList(){
+//    for(let j = 0; j < books.length; j++)
+//    {
+//       return [books[j].title].join(" "); //instructions said to add .join(" ") to remove the comma, but there is no comma if I remove the .join(" ")
+//    }
+// }
+// books.map(addToBookList);
+
+// function addBooks (books){
+//    let booklist = books.map(function (){
+//       for(let i = 0; i < books.length; i++){
+//          let newBook = document.createElement('li');
+//          newBook.innerText = `${books[i].title}`;
+//          roster.append(newBook)
+//          for(let j = 0; j < books.length; j++){
+            
+//          }
+//       }
+//    });
+//    return booklist.join('');
+// };
+// console.log(addBooks(books));
   
+function addBooks (books){
+   let booklist = books.map(function (){
+      
+      for(let i = 0; i < books.length; i++){
+         let newBook = document.createElement('li');
+         newBook.innerText = `${books[i].title}`;
+         roster.append(newBook)
+      }
+      
+      })
+   };
+
+console.log(addBooks(books));
 
 
 
